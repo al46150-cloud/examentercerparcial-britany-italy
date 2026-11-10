@@ -12,6 +12,8 @@
         'bowser':  'imagenes/bowser.jpg',
         'toad':  'imagenes/toad.jpg',
         'peach':  'imagenes/peach.jpg',
+        'luigi': 'imagenes/luigi.jpg',
+        'yoshi': 'imagenes/yoshi.jpg',
     };
 
     function updateInterface() {
@@ -25,7 +27,7 @@
         // Pequeño delay para que la opacidad llegue a 0 antes de cambiar la fuente
         setTimeout(() => {
             characterImage.src = newImgSrc;
-            characterImage.alt = "Imagen de " + selectedId;
+            characterImage.alt = "Imagen de yoshi " + selectedId;
             characterImage.style.opacity = 1; // Volver a mostrar
         }, 150);
 
@@ -57,7 +59,7 @@
         
         let percentage = (total / 500) * 100;
         if (percentage > 100) percentage = 100;
-        powerBar.style.width = percentage + '%';
+        powerBar.style.width = percentage + '9';
     }
 
     // Escuchar cambios en todo el formulario
